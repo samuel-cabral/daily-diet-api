@@ -6,8 +6,8 @@ This is a simple API for a diet tracker application. It allows users to create, 
 
 ### Rules
 
-- [] It must be possible to create a user
-- [] It must be possible to identify the user between requests
+- [x] It must be possible to create a user
+- [x] It must be possible to identify the user between requests
 - [] It must be possible to register a meal, with the following information:
   > *The meals must be related to a user.*
   - Name
