@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: bitnami/postgresql:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=dailydiet
+    volumes:
+      - postgres_data:/bitnami/postgresql
+    networks:
+      - daily-diet-network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "docker"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  daily-diet-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local 
