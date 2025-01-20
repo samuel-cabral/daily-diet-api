@@ -22,12 +22,15 @@ This is a simple API for a diet tracker application. It allows users to create, 
   - Date and Time
   - Is it within the diet or not
 - [x] It must be possible to delete a meal
-- [] It must be possible to recover the metrics of a user
-  - [] Total number of registered meals
-  - [] Total number of meals within the diet
-  - [] Total number of meals outside the diet
-  - [] Best sequence of meals within the diet
-- [] The user can only view, edit and delete the meals they created
+- [x] It must be possible to recover the metrics of a user
+  - [x] Total number of registered meals
+  - [x] Total number of meals within the diet
+  - [x] Total number of meals outside the diet
+  - [x] Best sequence of meals within the diet
+- [x] The user can only view, edit and delete the meals they created
+  - [x] All meal endpoints are protected by authentication
+  - [x] Users can only access their own meals
+  - [x] Proper error handling for unauthorized access
 
 ---
 
