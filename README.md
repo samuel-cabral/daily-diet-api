@@ -14,7 +14,7 @@ This is a simple API for a diet tracker application. It allows users to create, 
   - Description
   - Date and Time
   - Is it within the diet or not
-- [] It must be possible to list all meals of a user
+- [x] It must be possible to list all meals of a user
 - [] It must be possible to view a single meal
 - [] It must be possible to edit a meal, being able to change all the above data
 - [] It must be possible to delete a meal
